@@ -1,0 +1,12 @@
+[
+  {
+    "title": "Trigonometric Identity",
+    "LHS": "<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'><mrow><mtext>sin(θ) / cos(θ) </mtext></mrow></math>",
+    "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'><mrow><mtext>tan(θ)</mtext></mrow></math>"
+  },
+  {
+    "title": "Pythagorean Identity",
+    "LHS": "<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'><mrow><mtext>sin²(θ) + cos²(θ) </mtext></mrow></math>",
+    "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'><mrow><mtext>1</mtext></mrow></math>"
+  }
+]

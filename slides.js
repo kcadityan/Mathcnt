@@ -1,19 +1,15 @@
-// Define the slides in an array format with LHS and RHS
-const slides = [
-  {
-    title: "Trigonometric Identity",
-    LHS: "<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'><mrow><mtext>sin(θ) / cos(θ) </mtext></mrow></math>",
-    RHS: "<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'><mrow><mtext>tan(θ)</mtext></mrow></math>"
-  },
-  {
-    title: "Pythagorean Identity",
-    LHS: "<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'><mrow><mtext>sin²(θ) + cos²(θ) </mtext></mrow></math>",
-    RHS: "<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'><mrow><mtext>1</mtext></mrow></math>"
-  }
-];
-
+let slides = [];
 let currentSlide = 0;
 let showingRHS = false;
+
+// Fetch the slides data from the JSON file
+fetch('slides.json')
+  .then(response => response.json())
+  .then(data => {
+    slides = data;
+    showSlide(); // Initial call to display the first slide
+  })
+  .catch(error => console.error('Error loading slides data:', error));
 
 // Function to display the current slide in table format
 function showSlide() {
@@ -73,6 +69,3 @@ document.addEventListener('keydown', function (event) {
     }
   }
 });
-
-// Initial call to display the first slide
-showSlide();
