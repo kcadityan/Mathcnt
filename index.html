@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MathML Slide Show</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f9f9f9;
+      font-family: Arial, sans-serif;
+      overflow: hidden; /* Prevent scrolling */
+    }
+
+    /* Slide Container */
+    .slide-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100vw;
+      height: 100vh;
+      text-align: center;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+    }
+
+    /* Equation Title */
+    .equation-title {
+      font-size: 4vw;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    /* MathML Content */
+    .mathml-content {
+      font-size: 8vw; /* Dynamically scales with screen size */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+      height: 80%; /* Remaining height after title */
+    }
+  </style>
+</head>
+<body>
+  <!-- Slide Container -->
+  <div class="slide-container">
+    <div class="equation-title" id="equationTitle">
+      <!-- Equation Title will be dynamically injected here -->
+    </div>
+    <div class="mathml-content" id="mathmlContent">
+      <!-- MathML Content will be dynamically injected here -->
+    </div>
+  </div>
+
+  <!-- Load Slide Data -->
+  <script src="slides.js"></script>
+
+  <!-- Main Script -->
+  <script>
+    // Configuration
+    const slideDuration = 3; // Time in seconds for each slide
+
+    // Slide logic
+    let currentSlideIndex = 0;
+    const titleContainer = document.getElementById("equationTitle");
+    const mathmlContainer = document.getElementById("mathmlContent");
+
+    function showSlide(index) {
+      titleContainer.textContent = slides[index].title; // Set the equation title
+      mathmlContainer.innerHTML = slides[index].mathml; // Set the MathML content
+    }
+
+    function startSlideShow() {
+      showSlide(currentSlideIndex);
+
+      setInterval(() => {
+        currentSlideIndex = (currentSlideIndex + 1) % slides.length; // Loop back to first slide
+        showSlide(currentSlideIndex);
+      }, slideDuration * 1000);
+    }
+
+    // Start the slideshow when the page loads
+    window.onload = startSlideShow;
+  </script>
+</body>
+</html>
