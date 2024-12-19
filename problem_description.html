@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Problem Description</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 50px;
+      text-align: center;
+    }
+    #slide-container {
+      margin-top: 20px;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      min-height: 200px;
+    }
+    .navigation-buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    button:hover {
+      background-color: #0056b3;
+      transform: scale(1.1);
+    }
+
+    /* Make MathML content responsive */
+    table {
+      width: 100%;
+    }
+
+    td {
+      font-size: 1.5em; /* Default font size */
+    }
+
+    /* Media query for small screens (like mobile) */
+    @media screen and (max-width: 768px) {
+      td {
+        font-size: 1.2em; /* Adjust size for smaller screens */
+      }
+    }
+
+    /* Further scale for extra small screens (portrait phones) */
+    @media screen and (max-width: 480px) {
+      td {
+        font-size: 1em; /* Smaller font size for very small screens */
+      }
+    }
+  </style>
+  <!-- Include MathJax -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.min.js" defer></script>
+</head>
+<body>
+  <h1>Problem Description</h1>
+  <div id="slide-container">
+    <p>Loading...</p>
+  </div>
+  <div class="navigation-buttons">
+    <button id="prev-button" onclick="previousSlide()">Previous</button>
+    <button id="next-button" onclick="nextSlide()">Next</button>
+  </div>
+  <script src="slides.js"></script>
+</body>
+</html>

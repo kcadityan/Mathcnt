@@ -1,0 +1,217 @@
+[
+  {
+    "title": "Basic Trigonometric Functions",
+    "LHS": "<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'><mrow><mtext>sin(θ) / cos(θ)</mtext></mrow></math>",
+    "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'><mrow><mtext>tan(θ)</mtext></mrow></math>"
+  },
+  {
+    "title": "Pythagorean Identity",
+    "LHS": "<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'><mrow><mtext>sin²(θ) + cos²(θ)</mtext></mrow></math>",
+    "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'><mrow><mtext>1</mtext></mrow></math>"
+  },
+  {
+    "title": "Reciprocal Identities",
+    "LHS": "<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'><mrow><mtext>csc(θ)</mtext></mrow></math>",
+    "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'><mrow><mtext>1 / sin(θ)</mtext></mrow></math>"
+  },
+  {
+    "title": "Secant and Cosine",
+    "LHS": "<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'><mrow><mtext>sec(θ)</mtext></mrow></math>",
+    "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'><mrow><mtext>1 / cos(θ)</mtext></mrow></math>"
+  },
+  {
+    "title": "Cotangent and Tangent",
+    "LHS": "<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'><mrow><mtext>cot(θ)</mtext></mrow></math>",
+    "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'><mrow><mtext>1 / tan(θ)</mtext></mrow></math>"
+  },
+  {
+    "title": "Angle Sum Identity for Sine",
+    "LHS": "<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'><mrow><mtext>sin(A ± B)</mtext></mrow></math>",
+    "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'><mrow><mtext>sin(A) cos(B) ± cos(A) sin(B)</mtext></mrow></math>"
+  },
+  {
+    "title": "Angle Sum Identity for Cosine",
+    "LHS": "<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'><mrow><mtext>cos(A ± B)</mtext></mrow></math>",
+    "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'><mrow><mtext>cos(A) cos(B) ∓ sin(A) sin(B)</mtext></mrow></math>"
+  },
+  {
+    "title": "Angle Sum Identity for Tangent",
+    "LHS": "<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'><mrow><mtext>tan(A ± B)</mtext></mrow></math>",
+    "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'><mrow><mtext>(tan(A) ± tan(B)) / (1 ∓ tan(A) tan(B))</mtext></mrow></math>"
+  },
+  {
+    "title": "Double Angle Identity for Sine",
+    "LHS": "<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'><mrow><mtext>sin(2θ)</mtext></mrow></math>",
+    "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'><mrow><mtext>2 sin(θ) cos(θ)</mtext></mrow></math>"
+  },
+  {
+    "title": "Double Angle Identity for Cosine",
+    "LHS": "<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'><mrow><mtext>cos(2θ)</mtext></mrow></math>",
+    "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'><mrow><mtext>cos²(θ) - sin²(θ) = 2 cos²(θ) - 1 = 1 - 2 sin²(θ)</mtext></mrow></math>"
+  },
+  {
+    "title": "Double Angle Identity for Tangent",
+    "LHS": "<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'><mrow><mtext>tan(2θ)</mtext></mrow></math>",
+    "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'><mrow><mtext>2 tan(θ) / (1 - tan²(θ))</mtext></mrow></math>"
+  },
+  {
+    "title": "Half Angle Identity for Sine",
+    "LHS": "<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'><mrow><mtext>sin(θ / 2)</mtext></mrow></math>",
+    "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'><mrow><mtext>± √((1 - cos(θ)) / 2)</mtext></mrow></math>"
+  },
+  {
+    "title": "Half Angle Identity for Cosine",
+    "LHS": "<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'><mrow><mtext>cos(θ / 2)</mtext></mrow></math>",
+    "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'><mrow><mtext>± √((1 + cos(θ)) / 2)</mtext></mrow></math>"
+  },
+  {
+    "title": "Half Angle Identity for Tangent",
+    "LHS": "<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'><mrow><mtext>tan(θ / 2)</mtext></mrow></math>",
+    "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'><mrow><mtext>± √((1 - cos(θ)) / (1 + cos(θ)))</mtext></mrow></math>"
+  },
+  {
+    "title": "Law of Sines",
+    "LHS": "<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'><mrow><mtext>sin(A) / a</mtext></mrow></math>",
+    "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'><mrow><mtext>sin(B) / b = sin(C) / c</mtext></mrow></math>"
+  },
+  {
+    "title": "Law of Cosines",
+    "LHS": "<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'><mrow><mtext>c²</mtext></mrow></math>",
+    "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'><mrow><mtext>a² + b² - 2ab cos(C)</mtext></mrow></math>"
+  },
+  {
+    "title": "Co-function Identities",
+    "LHS": "<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'><mrow><mtext>sin(90° - θ)</mtext></mrow></math>",
+    "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'><mrow><mtext>cos(θ)</mtext></mrow></math>"
+  },
+  {
+    "title": "Tangent and Cotangent of Complementary Angles",
+    "LHS": "<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'><mrow><mtext>tan(90° - θ)</mtext></mrow></math>",
+    "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'><mrow><mtext>cot(θ)</mtext></mrow></math>"
+  },
+  {
+    "title": "Product-to-Sum Identity for sin(a)cos(b)",
+    "LHS": "<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'><mrow><mi>sin</mi><mo>(</mo><mi>a</mi><mo>)</mo><mo>&#xD7;</mo><mi>cos</mi><mo>(</mo><mi>b</mi><mo>)</mo></mrow></math>",
+    "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>&#xA0;</mo><mo>[</mo><mi>sin</mi><mo>(</mo><mi>a</mi><mo>+</mo><mi>b</mi><mo>)</mo><mo>+</mo><mi>sin</mi><mo>(</mo><mi>a</mi><mo>&#x2212;</mo><mi>b</mi><mo>)</mo><mo>]</mo></mrow></math>"
+  },
+  {
+    "title": "Product-to-Sum Identity for cos(a)cos(b)",
+    "LHS": "<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'><mrow><mi>cos</mi><mo>(</mo><mi>a</mi><mo>)</mo><mo>&#xD7;</mo><mi>cos</mi><mo>(</mo><mi>b</mi><mo>)</mo></mrow></math>",
+    "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>&#xA0;</mo><mo>[</mo><mi>cos</mi><mo>(</mo><mi>a</mi><mo>+</mo><mi>b</mi><mo>)</mo><mo>+</mo><mi>cos</mi><mo>(</mo><mi>a</mi><mo>&#x2212;</mo><mi>b</mi><mo>)</mo><mo>]</mo></mrow></math>"
+  },
+  {
+    "title": "Product-to-Sum Identity for sin(a)sin(b)",
+    "LHS": "<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'><mrow><mi>sin</mi><mo>(</mo><mi>a</mi><mo>)</mo><mo>&#xD7;</mo><mi>sin</mi><mo>(</mo><mi>b</mi><mo>)</mo></mrow></math>",
+    "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>&#xA0;</mo><mo>[</mo><mi>cos</mi><mo>(</mo><mi>a</mi><mo>&#x2212;</mo><mi>b</mi><mo>)</mo><mo>&#x2212;</mo><mi>cos</mi><mo>(</mo><mi>a</mi><mo>+</mo><mi>b</mi><mo>)</mo><mo>]</mo></mrow></math>"
+  },
+  {
+    "title": "Product-to-Sum Identity for cos(a)sin(b)",
+    "LHS": "<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'><mrow><mi>cos</mi><mo>(</mo><mi>a</mi><mo>)</mo><mo>&#xD7;</mo><mi>sin</mi><mo>(</mo><mi>b</mi><mo>)</mo></mrow></math>",
+    "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>&#xA0;</mo><mo>[</mo><mi>sin</mi><mo>(</mo><mi>a</mi><mo>+</mo><mi>b</mi><mo>)</mo><mo>&#x2212;</mo><mi>sin</mi><mo>(</mo><mi>a</mi><mo>&#x2212;</mo><mi>b</mi><mo>)</mo><mo>]</mo></mrow></math>"
+  },
+  {
+    "title": "Even/Odd Formula for sin(−θ)",
+    "LHS": "<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'><mrow><mi>sin</mi><mo>(</mo><mo>&#x2212;</mo><mi>θ</mi><mo>)</mo></mrow></math>",
+    "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'><mrow><mo>&#x2212;</mo><mi>sin</mi><mo>(</mo><mi>θ</mi><mo>)</mo></mrow></math>"
+  },
+  {
+    "title": "Even/Odd Formula for cos(−θ)",
+    "LHS": "<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'><mrow><mi>cos</mi><mo>(</mo><mo>&#x2212;</mo><mi>θ</mi><mo>)</mo></mrow></math>",
+    "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'><mrow><mi>cos</mi><mo>(</mo><mi>θ</mi><mo>)</mo></mrow></math>"
+  },
+  {
+    "title": "Even/Odd Formula for tan(−θ)",
+    "LHS": "<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'><mrow><mi>tan</mi><mo>(</mo><mo>&#x2212;</mo><mi>θ</mi><mo>)</mo></mrow></math>",
+    "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'><mrow><mo>&#x2212;</mo><mi>tan</mi><mo>(</mo><mi>θ</mi><mo>)</mo></mrow></math>"
+  },
+  {
+    "title": "Even/Odd Formula for csc(−θ)",
+    "LHS": "<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'><mrow><mi>csc</mi><mo>(</mo><mo>&#x2212;</mo><mi>θ</mi><mo>)</mo></mrow></math>",
+    "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'><mrow><mo>&#x2212;</mo><mi>csc</mi><mo>(</mo><mi>θ</mi><mo>)</mo></mrow></math>"
+  },
+  {
+    "title": "Even/Odd Formula for sec(−θ)",
+    "LHS": "<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'><mrow><mi>sec</mi><mo>(</mo><mo>&#x2212;</mo><mi>θ</mi><mo>)</mo></mrow></math>",
+    "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'><mrow><mi>sec</mi><mo>(</mo><mi>θ</mi><mo>)</mo></mrow></math>"
+  },
+  {
+    "title": "Even/Odd Formula for cot(−θ)",
+    "LHS": "<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'><mrow><mi>cot</mi><mo>(</mo><mo>&#x2212;</mo><mi>θ</mi><mo>)</mo></mrow></math>",
+    "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'><mrow><mo>&#x2212;</mo><mi>cot</mi><mo>(</mo><mi>θ</mi><mo>)</mo></mrow></math>"
+  },
+  {
+    "title": "Sine of 0°",
+    "LHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>sin</mi><mo>(</mo><mn>0</mn><mo>°</mo><mo>)</mo></mrow></math>",
+    "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mn>0</mn></math>"
+  },
+  {
+    "title": "Cosine of 0°",
+    "LHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>cos</mi><mo>(</mo><mn>0</mn><mo>°</mo><mo>)</mo></mrow></math>",
+    "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mn>1</mn></math>"
+  },
+  {
+    "title": "Tangent of 0°",
+    "LHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>tan</mi><mo>(</mo><mn>0</mn><mo>°</mo><mo>)</mo></mrow></math>",
+    "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mn>0</mn></math>"
+  },
+  {
+    "title": "Sine of 30°",
+    "LHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>sin</mi><mo>(</mo><mn>30</mn><mo>°</mo><mo>)</mo></mrow></math>",
+    "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mfrac><mn>1</mn><mn>2</mn></mfrac></math>"
+  },
+  {
+    "title": "Cosine of 30°",
+    "LHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>cos</mi><mo>(</mo><mn>30</mn><mo>°</mo><mo>)</mo></mrow></math>",
+    "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mfrac><msqrt><mn>3</mn></msqrt><mn>2</mn></mfrac></math>"
+  },
+  {
+    "title": "Tangent of 30°",
+    "LHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>tan</mi><mo>(</mo><mn>30</mn><mo>°</mo><mo>)</mo></mrow></math>",
+    "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mfrac><mn>1</mn><msqrt><mn>3</mn></msqrt></mfrac></math>"
+  },
+  {
+    "title": "Sine of 45°",
+    "LHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>sin</mi><mo>(</mo><mn>45</mn><mo>°</mo><mo>)</mo></mrow></math>",
+    "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mfrac><msqrt><mn>2</mn></msqrt><mn>2</mn></mfrac></math>"
+  },
+  {
+    "title": "Cosine of 45°",
+    "LHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>cos</mi><mo>(</mo><mn>45</mn><mo>°</mo><mo>)</mo></mrow></math>",
+    "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mfrac><msqrt><mn>2</mn></msqrt><mn>2</mn></mfrac></math>"
+  },
+  {
+    "title": "Tangent of 45°",
+    "LHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>tan</mi><mo>(</mo><mn>45</mn><mo>°</mo><mo>)</mo></mrow></math>",
+    "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mn>1</mn></math>"
+  },
+  {
+    "title": "Sine of 60°",
+    "LHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>sin</mi><mo>(</mo><mn>60</mn><mo>°</mo><mo>)</mo></mrow></math>",
+    "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mfrac><msqrt><mn>3</mn></msqrt><mn>2</mn></mfrac></math>"
+  },
+  {
+    "title": "Cosine of 60°",
+    "LHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>cos</mi><mo>(</mo><mn>60</mn><mo>°</mo><mo>)</mo></mrow></math>",
+    "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mfrac><mn>1</mn><mn>2</mn></mfrac></math>"
+  },
+  {
+    "title": "Tangent of 60°",
+    "LHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>tan</mi><mo>(</mo><mn>60</mn><mo>°</mo><mo>)</mo></mrow></math>",
+    "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><msqrt><mn>3</mn></msqrt></math>"
+  },
+  {
+    "title": "Sine of 90°",
+    "LHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>sin</mi><mo>(</mo><mn>90</mn><mo>°</mo><mo>)</mo></mrow></math>",
+    "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mn>1</mn></math>"
+  },
+  {
+    "title": "Cosine of 90°",
+    "LHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>cos</mi><mo>(</mo><mn>90</mn><mo>°</mo><mo>)</mo></mrow></math>",
+    "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mn>0</mn></math>"
+  },
+  {
+    "title": "Tangent of 90°",
+    "LHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>tan</mi><mo>(</mo><mn>90</mn><mo>°</mo><mo>)</mo></mrow></math>",
+    "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mo>&#x221e;</mo></math>"
+  }
+]

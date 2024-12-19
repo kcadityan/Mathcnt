@@ -1,71 +1,103 @@
-let slides = [];
-let currentSlide = 0;
-let showingRHS = false;
+const folders = ['trig', 'complex_numbers','sets','relations and functions','permutations','binomial_theorem','sequence_series','conic_sections']; // List of folders with slides.json
 
-// Fetch the slides data from the JSON file
-fetch('slides.json')
-  .then(response => response.json())
-  .then(data => {
-    slides = data;
-    showSlide(); // Initial call to display the first slide
-  })
-  .catch(error => console.error('Error loading slides data:', error));
+// Landing page functionality
+if (window.location.pathname.includes('index.html')) {
+  const buttonContainer = document.getElementById('button-container');
+  folders.forEach(folder => {
+    const button = document.createElement('button');
+    button.textContent = folder.replace('_', ' '); // Display name (e.g., "trig" -> "Trig")
+    button.onclick = () => loadProblems(folder);
+    buttonContainer.appendChild(button);
+  });
 
-// Function to display the current slide in table format
-function showSlide() {
-  const slide = slides[currentSlide];
-  const slideContainer = document.getElementById('slide-container');
-  
-  // Clear the previous content
-  slideContainer.innerHTML = '';
-
-  // Display title
-  const title = document.createElement('h2');
-  title.innerHTML = slide.title;
-  slideContainer.appendChild(title);
-
-  // Create the table
-  const table = document.createElement('table');
-  const row = document.createElement('tr');
-
-  // Create and append LHS (left-hand side)
-  const lhsCell = document.createElement('td');
-  lhsCell.innerHTML = slide.LHS;
-  row.appendChild(lhsCell);
-
-  // Create and append the equals sign (=)
-  const equalsCell = document.createElement('td');
-  equalsCell.innerHTML = "<mtext>=</mtext>";
-  row.appendChild(equalsCell);
-
-  // Create and append RHS (right-hand side) only if showingRHS is true
-  const rhsCell = document.createElement('td');
-  if (showingRHS) {
-    rhsCell.innerHTML = slide.RHS;
+  function loadProblems(folder) {
+    localStorage.setItem('currentFolder', folder); // Store the selected folder in localStorage
+    window.location.href = 'problem_description.html'; // Navigate to the problem description page
   }
-  row.appendChild(rhsCell);
-
-  // Append the row to the table
-  table.appendChild(row);
-  slideContainer.appendChild(table);
 }
 
-// Function to go to the next slide
-function nextSlide() {
-  // Move to the next slide and reset RHS visibility
-  currentSlide = (currentSlide + 1) % slides.length;
-  showingRHS = false; // Reset RHS visibility for next slide
-  showSlide();
-}
+// Problem description page functionality
+if (window.location.pathname.includes('problem_description.html')) {
+  let slides = [];
+  let currentSlide = 0;
+  let showingRHS = false; // Track if RHS is visible
 
-// Listen for the space key to toggle between showing RHS and next slide
-document.addEventListener('keydown', function (event) {
-  if (event.key === ' ') {  // Space key pressed
+  const folder = localStorage.getItem('currentFolder');
+  if (folder) {
+    fetch(`${folder}/slides.json`)
+      .then(response => {
+        if (!response.ok) throw new Error(`Failed to load slides from ${folder}`);
+        return response.json();
+      })
+      .then(data => {
+        slides = data;
+        currentSlide = 0;
+        showSlide();
+      })
+      .catch(error => {
+        console.error('Error:', error);
+        document.getElementById('slide-container').innerHTML = '<p>Error loading slides. Please try again.</p>';
+      });
+  } else {
+    window.location.href = 'index.html'; // Redirect if no folder is selected
+  }
+
+  function showSlide() {
+    const slideContainer = document.getElementById('slide-container');
+    slideContainer.innerHTML = '';
+
+    if (slides.length === 0) {
+      slideContainer.innerHTML = '<p>No slides available.</p>';
+      return;
+    }
+
+    const slide = slides[currentSlide];
+
+    // Display title
+    const title = document.createElement('h2');
+    title.textContent = slide.title;
+    slideContainer.appendChild(title);
+
+    // Display MathML content
+    const content = document.createElement('div');
+    content.innerHTML = `
+      <table style="width: 100%;">
+        <tr>
+          <td>${slide.LHS}</td>
+          <td><mtext>=</mtext></td>
+          <td>${showingRHS ? slide.RHS : ''}</td>
+        </tr>
+      </table>
+    `;
+    slideContainer.appendChild(content);
+
+    // Trigger MathJax to render MathML
+    if (window.MathJax) {
+      MathJax.typeset();
+    }
+  }
+
+  function nextSlide() {
     if (showingRHS) {
-      nextSlide();  // Move to the next slide
+      // If RHS is visible, go to the next slide
+      currentSlide = (currentSlide + 1) % slides.length; // Loop back to first slide
+      showingRHS = false; // Hide RHS after moving to the next slide
     } else {
-      showingRHS = true;  // Show RHS
+      // Otherwise, show the RHS
+      showingRHS = true;
+    }
+    showSlide();
+  }
+
+  function previousSlide() {
+    if (currentSlide > 0) {
+      currentSlide--;
+      showingRHS = false; // Hide RHS when going to previous slide
       showSlide();
     }
   }
-});
+
+  // Attach navigation buttons
+  document.getElementById('next-button').onclick = nextSlide;
+  document.getElementById('prev-button').onclick = previousSlide;
+}
