@@ -213,5 +213,80 @@
     "title": "Tangent of 90°",
     "LHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mi>tan</mi><mo>(</mo><mn>90</mn><mo>°</mo><mo>)</mo></mrow></math>",
     "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mo>&#x221e;</mo></math>"
+  },
+  {
+    "title": "Sine and Cosine Values",
+    "LHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mi>sin</mi><mo>(</mo><mn>0</mn><mo>°</mo><mo>)</mo></math>",
+    "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mn>0</mn></math>"
+  },
+  {
+    "title": "Sine of 15°",
+    "LHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mi>sin</mi><mo>(</mo><mn>15</mn><mo>°</mo><mo>)</mo></math>",
+    "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mfrac><mrow><msqrt><mn>6</mn></msqrt><mo>-</mo><msqrt><mn>2</mn></msqrt></mrow><mn>4</mn></mfrac></math>"
+  },
+  {
+    "title": "Sine of 18°",
+    "LHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mi>sin</mi><mo>(</mo><mn>18</mn><mo>°</mo><mo>)</mo></math>",
+    "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mfrac><mrow><msqrt><mn>5</mn></msqrt><mo>-</mo><mn>1</mn></mrow><mrow><mn>4</mn><msqrt><mn>2</mn></msqrt></mrow></mfrac></math>"
+  },
+  {
+    "title": "Sine of 22.5°",
+    "LHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mi>sin</mi><mo>(</mo><mn>22.5</mn><mo>°</mo><mo>)</mo></math>",
+    "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mfrac><msqrt><mn>2</mn><mo>-</mo><msqrt><mn>2</mn></msqrt></msqrt><mn>2</mn></mfrac></math>"
+  },
+  {
+    "title": "Sine of 54°",
+    "LHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mi>sin</mi><mo>(</mo><mn>54</mn><mo>°</mo><mo>)</mo></math>",
+    "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mfrac><mrow><msqrt><mn>5</mn></msqrt><mo>+</mo><mn>1</mn></mrow><mn>4</mn></mfrac></math>"
+  },
+  {
+    "title": "Sine of 120°",
+    "LHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mi>sin</mi><mo>(</mo><mn>120</mn><mo>°</mo><mo>)</mo></math>",
+    "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mn>√3</mn><mo>/</mo><mn>2</mn></math>"
+  },
+  {
+    "title": "Sine of 135°",
+    "LHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mi>sin</mi><mo>(</mo><mn>135</mn><mo>°</mo><mo>)</mo></math>",
+    "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mn>√2</mn><mo>/</mo><mn>2</mn></math>"
+  },
+  {
+    "title": "Sine of 150°",
+    "LHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mi>sin</mi><mo>(</mo><mn>150</mn><mo>°</mo><mo>)</mo></math>",
+    "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mn>1</mn><mo>/</mo><mn>2</mn></math>"
+  },
+  {
+    "title": "Sine of 225°",
+    "LHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mi>sin</mi><mo>(</mo><mn>225</mn><mo>°</mo><mo>)</mo></math>",
+    "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mo>-</mo><mn>√2</mn><mo>/</mo><mn>2</mn></math>"
+  },
+  {
+    "title": "Sine of 270°",
+    "LHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mi>sin</mi><mo>(</mo><mn>270</mn><mo>°</mo><mo>)</mo></math>",
+    "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mo>-</mo><mn>1</mn></math>"
+  },
+  {
+    "title": "Sine of 330°",
+    "LHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mi>sin</mi><mo>(</mo><mn>330</mn><mo>°</mo><mo>)</mo></math>",
+    "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mo>-</mo><mn>1</mn><mo>/</mo><mn>2</mn></math>"
+  },
+  {
+    "title": "Cosine of 15°",
+    "LHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mi>cos</mi><mo>(</mo><mn>15</mn><mo>°</mo><mo>)</mo></math>",
+    "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mfrac><mrow><msqrt><mn>6</mn></msqrt><mo>+</mo><msqrt><mn>2</mn></msqrt></mrow><mn>4</mn></mfrac></math>"
+  },
+  {
+    "title": "Cosine of 18°",
+    "LHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mi>cos</mi><mo>(</mo><mn>18</mn><mo>°</mo><mo>)</mo></math>",
+    "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mfrac><mrow><msqrt><mn>5</mn></msqrt><mo>+</mo><mn>1</mn></mrow><mrow><mn>4</mn><msqrt><mn>2</mn></msqrt></mrow></mfrac></math>"
+  },
+  {
+    "title": "Cosine of 22.5°",
+    "LHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mi>cos</mi><mo>(</mo><mn>22.5</mn><mo>°</mo><mo>)</mo></math>",
+    "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mfrac><msqrt><mn>2</mn><mo>+</mo><msqrt><mn>2</mn></msqrt></msqrt><mn>2</mn></mfrac></math>"
+  },
+  {
+    "title": "Cosine of 54°",
+    "LHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mi>cos</mi><mo>(</mo><mn>54</mn><mo>°</mo><mo>)</mo></math>",
+    "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mfrac><mrow><msqrt><mn>5</mn></msqrt><mo>-</mo><mn>1</mn></mrow><mn>4</mn></mfrac></math>"
   }
 ]
