@@ -1,5 +1,15 @@
 [
   {
+    "title": "Guidlines",
+    "LHS": "1)Do not reduce to lowest forms unnecesarily,Try to solve at the highest form possible.",
+    "RHS": ".... you can start now"
+  }, 
+  {
+    "title": "Simplification Identity",
+    "LHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mn>2</mn><mi>a</mi></math>",
+    "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mi>a</mi><mo>+</mo><mi>b</mi><mo>+</mo><mi>a</mi><mo>-</mo><mi>b</mi></math>"
+  },  
+  {
     "title": "Basic Trigonometric Functions",
     "LHS": "<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'><mrow><mtext>sin(θ) / cos(θ)</mtext></mrow></math>",
     "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'><mrow><mtext>tan(θ)</mtext></mrow></math>"
@@ -9,6 +19,46 @@
     "LHS": "<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'><mrow><mtext>sin²(θ) + cos²(θ)</mtext></mrow></math>",
     "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'><mrow><mtext>1</mtext></mrow></math>"
   },
+  {
+    "title": "Sine Identity",
+    "LHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mi>sin</mi><mo>(</mo><mi>a</mi><mo>)</mo></math>",
+    "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><msqrt><mrow><mn>1</mn><mo>-</mo><msup><mi>cos</mi><mn>2</mn></msup><mo>(</mo><mi>a</mi><mo>)</mo></mrow></msqrt></math>"
+  },
+  {
+    "title": "Cosine Identity",
+    "LHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mi>cos</mi><mo>(</mo><mi>a</mi><mo>)</mo></math>",
+    "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><msqrt><mrow><mn>1</mn><mo>-</mo><msup><mi>sin</mi><mn>2</mn></msup><mo>(</mo><mi>a</mi><mo>)</mo></mrow></msqrt></math>"
+  },
+  {
+    "title": "Sin²(a) Identity",
+    "LHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><msup><mi>sin</mi><mn>2</mn></msup><mo>(</mo><mi>a</mi><mo>)</mo></math>",
+    "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mn>1</mn><mo>-</mo><msup><mi>cos</mi><mn>2</mn></msup><mo>(</mo><mi>a</mi><mo>)</mo></math>"
+  },
+  {
+    "title": "Cos²(a) Identity",
+    "LHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><msup><mi>cos</mi><mn>2</mn></msup><mo>(</mo><mi>a</mi><mo>)</mo></math>",
+    "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mn>1</mn><mo>-</mo><msup><mi>sin</mi><mn>2</mn></msup><mo>(</mo><mi>a</mi><mo>)</mo></math>"
+  },
+  {
+    "title": "Sin²(a) Identity",
+    "LHS": "Given Sin how to find Cos",
+    "RHS": ":)"
+  },
+  {
+    "title": "Cos²(a) Identity",
+    "LHS": "Given Cos how to find Sin",
+    "RHS": ":)"
+  },
+  {
+    "title": "sin^2 x = tan^2 x / (1 + tan^2 x)",
+    "LHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><msup><mi>sin</mi><mn>2</mn></msup><mi>x</mi></math>",
+    "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mfrac><msup><mi>tan</mi><mn>2</mn></msup><mrow><mn>1</mn><mo>+</mo><msup><mi>tan</mi><mn>2</mn></msup><mi>x</mi></mrow></mfrac></math>"
+  },
+  {
+    "title": "cos^2 x = 1 / (1 + tan^2 x)",
+    "LHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><msup><mi>cos</mi><mn>2</mn></msup><mi>x</mi></math>",
+    "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mfrac><mn>1</mn><mrow><mn>1</mn><mo>+</mo><msup><mi>tan</mi><mn>2</mn></msup><mi>x</mi></mrow></mfrac></math>"
+  },    
   {
     "title": "Reciprocal Identities",
     "LHS": "<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'><mrow><mtext>csc(θ)</mtext></mrow></math>",
@@ -227,8 +277,8 @@
   {
     "title": "Sine of 18°",
     "LHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mi>sin</mi><mo>(</mo><mn>18</mn><mo>°</mo><mo>)</mo></math>",
-    "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mfrac><mrow><msqrt><mn>5</mn></msqrt><mo>-</mo><mn>1</mn></mrow><mrow><mn>4</mn><msqrt><mn>2</mn></msqrt></mrow></mfrac></math>"
-  },
+    "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mfrac><mrow><msqrt><mn>5</mn></msqrt><mo>-</mo><mn>1</mn></mrow><mn>4</mn></mfrac></math>"
+  },  
   {
     "title": "Sine of 22.5°",
     "LHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mi>sin</mi><mo>(</mo><mn>22.5</mn><mo>°</mo><mo>)</mo></math>",
@@ -288,5 +338,25 @@
     "title": "Cosine of 54°",
     "LHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mi>cos</mi><mo>(</mo><mn>54</mn><mo>°</mo><mo>)</mo></math>",
     "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mfrac><mrow><msqrt><mn>5</mn></msqrt><mo>-</mo><mn>1</mn></mrow><mn>4</mn></mfrac></math>"
+  },
+  {
+    "title": "Sine of 3x",
+    "LHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mi>sin</mi><mo>(</mo><mn>3</mn><mi>x</mi><mo>)</mo></math>",
+    "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mo>-</mo><mn>4</mn><msup><mi>sin</mi><mn>3</mn></msup><mo>(</mo><mi>x</mi><mo>)</mo><mo>+</mo><mn>3</mn><mi>sin</mi><mo>(</mo><mi>x</mi><mo>)</mo></mrow></math>"
+  },
+  {
+    "title": "Cosine of 3x",
+    "LHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mi>cos</mi><mo>(</mo><mn>3</mn><mi>x</mi><mo>)</mo></math>",
+    "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mrow><mn>4</mn><msup><mi>cos</mi><mn>3</mn></msup><mo>(</mo><mi>x</mi><mo>)</mo><mo>-</mo><mn>3</mn><mi>cos</mi><mo>(</mo><mi>x</mi><mo>)</mo></mrow></math>"
+  },
+  {
+    "title": "Tan of 3x",
+    "LHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mi>tan</mi><mo>(</mo><mn>3</mn><mi>x</mi><mo>)</mo></math>",
+    "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mfrac><mrow><mn>3</mn><mi>tan</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>-</mo><msup><mi>tan</mi><mn>3</mn></msup><mi>x</mi></mrow><mrow><mn>1</mn><mo>-</mo><mn>3</mn><msup><mi>tan</mi><mn>2</mn></msup><mi>x</mi></mrow></mfrac></math>"
+  },
+  {
+    "title": "Generation of Table of Sin Cos Tan Sec Cosc Cot",
+    "LHS": "Generate the table",
+    "RHS": "Good job"
   }
 ]
