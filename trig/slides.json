@@ -40,6 +40,11 @@
     "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mn>1</mn><mo>-</mo><msup><mi>sin</mi><mn>2</mn></msup><mo>(</mo><mi>a</mi><mo>)</mo></math>"
   },
   {
+    "title": "Guidlines",
+    "LHS": "1)Given Sin you can find Cos. And viceversa. And from there tan and every other function",
+    "RHS": ":)"
+  }, 
+  {
     "title": "Sin²(a) Identity",
     "LHS": "Given Sin how to find Cos",
     "RHS": ":)"
