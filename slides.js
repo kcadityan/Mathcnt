@@ -1,4 +1,4 @@
-const folders = ['trig', 'complex_numbers','sets','relations and functions','permutations','binomial_theorem','sequence_series','conic_sections']; // List of folders with slides.json
+const folders = ['trig','permutations','complex_numbers','sets','algebra']; // List of folders with slides.json
 
 // Landing page functionality
 if (window.location.pathname.includes('index.html')) {
