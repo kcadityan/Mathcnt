@@ -365,10 +365,30 @@
     "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mfrac><msqrt><mn>2</mn><mo>+</mo><msqrt><mn>2</mn></msqrt></msqrt><mn>2</mn></mfrac></math>"
   },
   {
+    "title": "Cosine of 36°",
+    "LHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mi>cos</mi><mo>(</mo><mn>36</mn><mo>°</mo><mo>)</mo></math>",
+    "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mfrac><mrow><msqrt><mn>5</mn></msqrt><mo>+</mo><mn>1</mn></mrow><mn>4</mn></mfrac></math>"
+  },
+  {
     "title": "Cosine of 54°",
     "LHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mi>cos</mi><mo>(</mo><mn>54</mn><mo>°</mo><mo>)</mo></math>",
     "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mfrac><mrow><msqrt><mn>5</mn></msqrt><mo>-</mo><mn>1</mn></mrow><mn>4</mn></mfrac></math>"
   },
+  {
+    "title": "Tangent of 75°",
+    "LHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mi>tan</mi><mo>(</mo><mn>75</mn><mo>°</mo><mo>)</mo></math>",
+    "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mn>2</mn><mo>+</mo><msqrt><mn>3</mn></msqrt></math>"
+  },
+  {
+    "title": "Tangent of 15°",
+    "LHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mi>tan</mi><mo>(</mo><mn>15</mn><mo>°</mo><mo>)</mo></math>",
+    "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mn>2</mn><mo>-</mo><msqrt><mn>3</mn></msqrt></math>"
+  },
+  {
+    "title": "Tangent of 22.5°",
+    "LHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mi>tan</mi><mo>(</mo><mn>22.5</mn><mo>°</mo><mo>)</mo></math>",
+    "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><msqrt><mn>2</mn></msqrt><mo>-</mo><mn>1</mn></math>"
+  },  
   {
     "title": "Sine of 3x",
     "LHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mi>sin</mi><mo>(</mo><mn>3</mn><mi>x</mi><mo>)</mo></math>",
