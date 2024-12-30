@@ -2,6 +2,11 @@
   {
     "title": "Guidlines",
     "LHS": "1)Do not reduce to lowest forms unnecesarily,Try to solve at the highest form possible.",
+    "RHS": ".... "
+  }, 
+  {
+    "title": "Guidlines",
+    "LHS": "2)See if you can substitute the variable with some simple value like 0,1 for angles and 3,4,5 for sides.If the values you get matches the answer.",
     "RHS": ".... you can start now"
   }, 
   {
@@ -105,6 +110,16 @@
     "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'><mrow><mtext>cos²(θ) - sin²(θ) = 2 cos²(θ) - 1 = 1 - 2 sin²(θ)</mtext></mrow></math>"
   },
   {
+    "title": "Double Angle Identity for Sine",
+    "LHS": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>sin</mi><mn>2</mn><mi>x</mi></math>",
+    "RHS": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mn>2</mn><mi>tan</mi><mi>x</mi></mrow><mrow><mn>1</mn><mo>-</mo><msup><mi>tan</mi><mn>2</mn></msup><mi>x</mi></mrow></mfrac></math>"
+  },
+  {
+    "title": "Double Angle Identity for Cosine",
+    "LHS": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>cos</mi><mn>2</mn><mi>x</mi></math>",
+    "RHS": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mn>1</mn><mo>-</mo><msup><mi>tan</mi><mn>2</mn></msup><mi>x</mi></mrow><mrow><mn>1</mn><mo>+</mo><msup><mi>tan</mi><mn>2</mn></msup><mi>x</mi></mrow></mfrac></math>"
+  },
+  {
     "title": "Double Angle Identity for Tangent",
     "LHS": "<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'><mrow><mtext>tan(2θ)</mtext></mrow></math>",
     "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'><mrow><mtext>2 tan(θ) / (1 - tan²(θ))</mtext></mrow></math>"
@@ -143,6 +158,16 @@
     "title": "Tangent and Cotangent of Complementary Angles",
     "LHS": "<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'><mrow><mtext>tan(90° - θ)</mtext></mrow></math>",
     "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'><mrow><mtext>cot(θ)</mtext></mrow></math>"
+  },
+  {
+    "title": "Reduction Method",
+    "LHS": "<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'><mrow><mtext>Ask some angles</mtext></mrow></math>",
+    "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'><mrow><mtext>{Sin/Cos/Tan} {180/360/n360} +- x = {sin/cos/tan} x. Sign will be that of LHS f() sign in quadrant</mtext></mrow></math>"
+  },
+  {
+    "title": "Reduction Method",
+    "LHS": "<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'><mrow><mtext>Ask some angles</mtext></mrow></math>",
+    "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML' display='block'><mrow><mtext>{Sin/Cos/Tan/Sec/Cosec} {90/270/n270} +- x = {cos/sin/cot/cosec/sec} x. Sign will be that of LHS f() sign in quadrant</mtext></mrow></math>"
   },
   {
     "title": "Product-to-Sum Identity for sin(a)cos(b)",
