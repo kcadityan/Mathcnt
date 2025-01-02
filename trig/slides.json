@@ -112,7 +112,7 @@
   {
     "title": "Double Angle Identity for Sine",
     "LHS": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>sin</mi><mn>2</mn><mi>x</mi></math>",
-    "RHS": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mn>2</mn><mi>tan</mi><mi>x</mi></mrow><mrow><mn>1</mn><mo>-</mo><msup><mi>tan</mi><mn>2</mn></msup><mi>x</mi></mrow></mfrac></math>"
+    "RHS": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mfrac><mrow><mn>2</mn><mi>tan</mi><mi>x</mi></mrow><mrow><mn>1</mn><mo>+</mo><msup><mi>tan</mi><mn>2</mn></msup><mi>x</mi></mrow></mfrac></math>"
   },
   {
     "title": "Double Angle Identity for Cosine",
@@ -408,5 +408,40 @@
     "title": "Generation of Table of Sin Cos Tan Sec Cosc Cot",
     "LHS": "Generate the table",
     "RHS": "Good job"
+  },
+  {
+    "title": "Trigonometric Identity 1",
+    "LHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mi>sin</mi><mi>x</mi><mo>*</mo><mi>sin</mi><mo>(</mo><mn>60</mn><mo>-</mo><mi>x</mi><mo>)</mo><mo>*</mo><mi>sin</mi><mo>(</mo><mn>60</mn><mo>+</mo><mi>x</mi><mo>)</mo></math>",
+    "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mfrac><mn>1</mn><mn>4</mn></mfrac><mi>sin</mi><mo>(</mo><mn>3</mn><mi>x</mi><mo>)</mo></math>"
+  },
+  {
+    "title": "Trigonometric Identity 2",
+    "LHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mi>cos</mi><mi>x</mi><mo>*</mo><mi>cos</mi><mo>(</mo><mn>60</mn><mo>-</mo><mi>x</mi><mo>)</mo><mo>*</mo><mi>cos</mi><mo>(</mo><mn>60</mn><mo>+</mo><mi>x</mi><mo>)</mo></math>",
+    "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mfrac><mn>1</mn><mn>4</mn></mfrac><mi>cos</mi><mo>(</mo><mn>3</mn><mi>x</mi><mo>)</mo></math>"
+  },
+  {
+    "title": "Inequality for Positive x",
+    "LHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mi>x</mi><mo>+</mo><mfrac><mn>1</mn><mi>x</mi></mfrac></math>",
+    "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mo>&gt;=</mo><mn>2</mn></math>"
+  },
+  {
+    "title": "Inequality for Negative x",
+    "LHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mi>x</mi><mo>+</mo><mfrac><mn>1</mn><mi>x</mi></mfrac></math>",
+    "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mo>&lt;=</mo><mo>-</mo><mn>2</mn></math>"
+  },
+  {
+    "title": "General Solution for sinx = siny",
+    "LHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mi>sin</mi><mi>x</mi><mo>=</mo><mi>sin</mi><mi>y</mi></math>",
+    "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mi>x</mi><mo>=</mo><mi>n</mi><mi>&pi;</mi><mo>+</mo><mo>(</mo><mo>-</mo><mn>1</mn><mo>)</mo><mo>^</mo><mi>n</mi><mi>y</mi><mo>,</mo><mi>n</mi><mo>&isin;</mo><mi>Z</mi></math>"
+  },
+  {
+    "title": "General Solution for cosx = cosy",
+    "LHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mi>cos</mi><mi>x</mi><mo>=</mo><mi>cos</mi><mi>y</mi></math>",
+    "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mi>x</mi><mo>=</mo><mn>2</mn><mi>n</mi><mi>&pi;</mi><mo>&plusmn;</mo><mi>y</mi><mo>,</mo><mi>n</mi><mo>&isin;</mo><mi>Z</mi></math>"
+  },
+  {
+    "title": "General Solution for tanx = tany",
+    "LHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mi>tan</mi><mi>x</mi><mo>=</mo><mi>tan</mi><mi>y</mi></math>",
+    "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mi>x</mi><mo>=</mo><mi>n</mi><mi>&pi;</mi><mo>+</mo><mi>y</mi><mo>,</mo><mi>n</mi><mo>&isin;</mo><mi>Z</mi></math>"
   }
 ]
