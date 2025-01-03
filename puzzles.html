@@ -13,7 +13,11 @@
     .puzzle {
       margin-bottom: 30px;
     }
-    .question, .steps, .choices {
+    .question {
+      margin: 10px 0;
+      font-size: 24px;
+    }
+    .steps, .choices {
       margin: 10px 0;
     }
     .choice {
@@ -52,6 +56,11 @@
     .choice input[type="radio"] {
       margin-right: 10px;
     }
+    #submit-exam-button {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
   </style>
 </head>
 <body>
@@ -60,14 +69,16 @@
   <div class="navigation-buttons">
     <button id="back-button">Back</button>
     <button id="next-button">Next</button>
-    <button id="submit-button" disabled>Submit</button>
-    <button id="submit-exam-button">Submit Exam</button>
+    <button id="hint-button">Hint</button>
   </div>
+  <button id="submit-button" disabled>Submit</button>
+  <button id="submit-exam-button">Submit Exam</button>
 
   <script>
     let currentPuzzleIndex = 0;
     let selectedChoices = [];
     let puzzles = [];
+    let currentStepIndex = 0;
 
     fetch('puzzles.json')
       .then(response => response.json())
@@ -93,6 +104,8 @@
 
       const stepsDiv = document.createElement('div');
       stepsDiv.className = 'steps';
+      stepsDiv.id = 'steps';
+      stepsDiv.style.display = 'none';
       stepsDiv.innerHTML = `<strong>Steps:</strong> ${puzzle.steps.join('<br>')}`;
       puzzleDiv.appendChild(stepsDiv);
 
@@ -118,6 +131,11 @@
           document.getElementById('submit-button').disabled = false;
         });
       });
+
+      // Reset the current step index for hints
+      currentStepIndex = 0;
+      document.getElementById('steps').style.display = 'none';
+      document.getElementById('hint-button').disabled = false;
     }
 
     document.getElementById('back-button').addEventListener('click', () => {
@@ -153,6 +171,19 @@
         document.getElementById('submit-button').disabled = true;
       } else {
         alert('Please select an answer before submitting.');
+      }
+    });
+
+    document.getElementById('hint-button').addEventListener('click', () => {
+      const stepsDiv = document.getElementById('steps');
+      const puzzle = puzzles[currentPuzzleIndex];
+      if (currentStepIndex < puzzle.steps.length) {
+        stepsDiv.style.display = 'block';
+        stepsDiv.innerHTML = `<strong>Steps:</strong> ${puzzle.steps.slice(0, currentStepIndex + 1).join('<br>')}`;
+        currentStepIndex++;
+      }
+      if (currentStepIndex >= puzzle.steps.length) {
+        document.getElementById('hint-button').disabled = true;
       }
     });
 
