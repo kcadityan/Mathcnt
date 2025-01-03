@@ -3,19 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home</title>
+  <title>Problem Viewer</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-      background-color: #f0f0f0;
+      margin: 50px;
+      text-align: center;
     }
     .button-container {
-      text-align: center;
+      margin-top: 20px;
     }
     button {
       padding: 20px;
@@ -30,13 +26,16 @@
     }
     button:hover {
       background-color: #0056b3;
+      transform: scale(1.1);
     }
   </style>
 </head>
 <body>
-  <div class="button-container">
-    <button onclick="location.href='revise.html'">Revise</button>
-    <button onclick="location.href='puzzles.html'">Puzzles</button>
+  <h1>If You are Reading this Then You Should Probably add a /revise.html to the link</h1>
+  <h1>If The page works then no problem<h1>
+  <div class="button-container" id="button-container">
+    <!-- Buttons will be dynamically added here -->
   </div>
+  <script src="slides.js"></script>
 </body>
 </html>

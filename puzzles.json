@@ -1,0 +1,134 @@
+[
+  {
+    "question": "<math><mrow><mi>x</mi><mo>+</mo><mn>2</mn><mo>=</mo><mn>4</mn></mrow></math>",
+    "steps": [
+      "<math><mrow><mi>x</mi><mo>=</mo><mn>4</mn><mo>-</mo><mn>2</mn></mrow></math>",
+      "<math><mrow><mi>x</mi><mo>=</mo><mn>2</mn></mrow></math>"
+    ],
+    "choices": [
+      {
+        "content": "<math><mrow><mi>x</mi><mo>=</mo><mn>2</mn></mrow></math>",
+        "isCorrect": true
+      },
+      {
+        "content": "<math><mrow><mi>x</mi><mo>=</mo><mn>3</mn></mrow></math>",
+        "isCorrect": false
+      },
+      {
+        "content": "<math><mrow><mi>x</mi><mo>=</mo><mn>4</mn></mrow></math>",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "<math><mrow><mi>y</mi><mo>-</mo><mn>3</mn><mo>=</mo><mn>1</mn></mrow></math>",
+    "steps": [
+      "<math><mrow><mi>y</mi><mo>=</mo><mn>1</mn><mo>+</mo><mn>3</mn></mrow></math>",
+      "<math><mrow><mi>y</mi><mo>=</mo><mn>4</mn></mrow></math>"
+    ],
+    "choices": [
+      {
+        "content": "<math><mrow><mi>y</mi><mo>=</mo><mn>4</mn></mrow></math>",
+        "isCorrect": true
+      },
+      {
+        "content": "<math><mrow><mi>y</mi><mo>=</mo><mn>5</mn></mrow></math>",
+        "isCorrect": false
+      },
+      {
+        "content": "<math><mrow><mi>y</mi><mo>=</mo><mn>3</mn></mrow></math>",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "<math><mrow><mn>2</mn><mi>z</mi><mo>=</mo><mn>8</mn></mrow></math>",
+    "steps": [
+      "<math><mrow><mi>z</mi><mo>=</mo><mn>8</mn><mo>/</mo><mn>2</mn></mrow></math>",
+      "<math><mrow><mi>z</mi><mo>=</mo><mn>4</mn></mrow></math>"
+    ],
+    "choices": [
+      {
+        "content": "<math><mrow><mi>z</mi><mo>=</mo><mn>4</mn></mrow></math>",
+        "isCorrect": true
+      },
+      {
+        "content": "<math><mrow><mi>z</mi><mo>=</mo><mn>6</mn></mrow></math>",
+        "isCorrect": false
+      },
+      {
+        "content": "<math><mrow><mi>z</mi><mo>=</mo><mn>2</mn></mrow></math>",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "<math><mrow><mn>3</mn><mi>a</mi><mo>+</mo><mn>1</mn><mo>=</mo><mn>7</mn></mrow></math>",
+    "steps": [
+      "<math><mrow><mn>3</mn><mi>a</mi><mo>=</mo><mn>7</mn><mo>-</mo><mn>1</mn></mrow></math>",
+      "<math><mrow><mn>3</mn><mi>a</mi><mo>=</mo><mn>6</mn></mrow></math>",
+      "<math><mrow><mi>a</mi><mo>=</mo><mn>6</mn><mo>/</mo><mn>3</mn></mrow></math>",
+      "<math><mrow><mi>a</mi><mo>=</mo><mn>2</mn></mrow></math>"
+    ],
+    "choices": [
+      {
+        "content": "<math><mrow><mi>a</mi><mo>=</mo><mn>2</mn></mrow></math>",
+        "isCorrect": true
+      },
+      {
+        "content": "<math><mrow><mi>a</mi><mo>=</mo><mn>3</mn></mrow></math>",
+        "isCorrect": false
+      },
+      {
+        "content": "<math><mrow><mi>a</mi><mo>=</mo><mn>1</mn></mrow></math>",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "<math><mrow><mn>4</mn><mi>b</mi><mo>-</mo><mn>2</mn><mo>=</mo><mn>10</mn></mrow></math>",
+    "steps": [
+      "<math><mrow><mn>4</mn><mi>b</mi><mo>=</mo><mn>10</mn><mo>+</mo><mn>2</mn></mrow></math>",
+      "<math><mrow><mn>4</mn><mi>b</mi><mo>=</mo><mn>12</mn></mrow></math>",
+      "<math><mrow><mi>b</mi><mo>=</mo><mn>12</mn><mo>/</mo><mn>4</mn></mrow></math>",
+      "<math><mrow><mi>b</mi><mo>=</mo><mn>3</mn></mrow></math>"
+    ],
+    "choices": [
+      {
+        "content": "<math><mrow><mi>b</mi><mo>=</mo><mn>3</mn></mrow></math>",
+        "isCorrect": true
+      },
+      {
+        "content": "<math><mrow><mi>b</mi><mo>=</mo><mn>4</mn></mrow></math>",
+        "isCorrect": false
+      },
+      {
+        "content": "<math><mrow><mi>b</mi><mo>=</mo><mn>2</mn></mrow></math>",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "question": "<math><mrow><mn>5</mn><mi>c</mi><mo>+</mo><mn>3</mn><mo>=</mo><mn>18</mn></mrow></math>",
+    "steps": [
+      "<math><mrow><mn>5</mn><mi>c</mi><mo>=</mo><mn>18</mn><mo>-</mo><mn>3</mn></mrow></math>",
+      "<math><mrow><mn>5</mn><mi>c</mi><mo>=</mo><mn>15</mn></mrow></math>",
+      "<math><mrow><mi>c</mi><mo>=</mo><mn>15</mn><mo>/</mo><mn>5</mn></mrow></math>",
+      "<math><mrow><mi>c</mi><mo>=</mo><mn>3</mn></mrow></math>"
+    ],
+    "choices": [
+      {
+        "content": "<math><mrow><mi>c</mi><mo>=</mo><mn>3</mn></mrow></math>",
+        "isCorrect": true
+      },
+      {
+        "content": "<math><mrow><mi>c</mi><mo>=</mo><mn>4</mn></mrow></math>",
+        "isCorrect": false
+      },
+      {
+        "content": "<math><mrow><mi>c</mi><mo>=</mo><mn>2</mn></mrow></math>",
+        "isCorrect": false
+      }
+    ]
+  }
+]

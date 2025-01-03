@@ -1,7 +1,7 @@
 const folders = ['trig','permutations','complex_numbers','sets','algebra']; // List of folders with slides.json
 
 // Landing page functionality
-if (window.location.pathname.includes('index.html')) {
+if (window.location.pathname.includes('revise.html')) {
   const buttonContainer = document.getElementById('button-container');
   folders.forEach(folder => {
     const button = document.createElement('button');
@@ -39,7 +39,7 @@ if (window.location.pathname.includes('problem_description.html')) {
         document.getElementById('slide-container').innerHTML = '<p>Error loading slides. Please try again.</p>';
       });
   } else {
-    window.location.href = 'index.html'; // Redirect if no folder is selected
+    window.location.href = 'revise.html'; // Redirect if no folder is selected
   }
 
   function showSlide() {

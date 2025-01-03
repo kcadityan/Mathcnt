@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Puzzles</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 50px;
+      text-align: center;
+    }
+    .puzzle {
+      margin-bottom: 30px;
+    }
+    .question, .steps, .choices {
+      margin: 10px 0;
+    }
+    .choice {
+      display: inline-block;
+      margin: 5px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .navigation-buttons {
+      margin-top: 20px;
+    }
+    button {
+      padding: 10px 20px;
+      margin: 5px;
+      font-size: 16px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    button:disabled {
+      background-color: #cccccc;
+      cursor: not-allowed;
+    }
+    .choice label {
+      display: inline-block;
+      padding: 10px;
+      cursor: pointer;
+    }
+    .choice input[type="radio"] {
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Puzzles</h1>
+  <div id="puzzles-container"></div>
+  <div class="navigation-buttons">
+    <button id="back-button">Back</button>
+    <button id="next-button">Next</button>
+    <button id="submit-button" disabled>Submit</button>
+    <button id="submit-exam-button">Submit Exam</button>
+  </div>
+
+  <script>
+    let currentPuzzleIndex = 0;
+    let selectedChoices = [];
+    let puzzles = [];
+
+    fetch('puzzles.json')
+      .then(response => response.json())
+      .then(data => {
+        puzzles = data;
+        selectedChoices = new Array(puzzles.length).fill(null);
+        displayPuzzle(currentPuzzleIndex);
+      })
+      .catch(error => console.error('Error fetching puzzles:', error));
+
+    function displayPuzzle(index) {
+      const container = document.getElementById('puzzles-container');
+      container.innerHTML = '';
+
+      const puzzle = puzzles[index];
+      const puzzleDiv = document.createElement('div');
+      puzzleDiv.className = 'puzzle';
+
+      const questionDiv = document.createElement('div');
+      questionDiv.className = 'question';
+      questionDiv.innerHTML = `<strong>Question ${index + 1}:</strong> ${puzzle.question}`;
+      puzzleDiv.appendChild(questionDiv);
+
+      const stepsDiv = document.createElement('div');
+      stepsDiv.className = 'steps';
+      stepsDiv.innerHTML = `<strong>Steps:</strong> ${puzzle.steps.join('<br>')}`;
+      puzzleDiv.appendChild(stepsDiv);
+
+      const choicesDiv = document.createElement('div');
+      choicesDiv.className = 'choices';
+      choicesDiv.innerHTML = '<strong>Choices:</strong>';
+      puzzle.choices.forEach((choice, choiceIndex) => {
+        const choiceDiv = document.createElement('div');
+        choiceDiv.className = 'choice';
+        choiceDiv.innerHTML = `
+          <input type="radio" name="choice" id="choice${choiceIndex}" value="${choiceIndex}" ${selectedChoices[index] == choiceIndex ? 'checked' : ''}>
+          <label for="choice${choiceIndex}">${choice.content}</label>
+        `;
+        choicesDiv.appendChild(choiceDiv);
+      });
+      puzzleDiv.appendChild(choicesDiv);
+
+      container.appendChild(puzzleDiv);
+
+      // Add event listeners to radio buttons to enable the submit button
+      document.querySelectorAll('input[name="choice"]').forEach(radio => {
+        radio.addEventListener('change', () => {
+          document.getElementById('submit-button').disabled = false;
+        });
+      });
+    }
+
+    document.getElementById('back-button').addEventListener('click', () => {
+      if (currentPuzzleIndex > 0) {
+        currentPuzzleIndex--;
+        displayPuzzle(currentPuzzleIndex);
+        document.getElementById('submit-button').disabled = true;
+      }
+    });
+
+    document.getElementById('next-button').addEventListener('click', () => {
+      if (currentPuzzleIndex < puzzles.length - 1) {
+        currentPuzzleIndex++;
+      } else {
+        currentPuzzleIndex = 0; // Go back to the first question
+      }
+      displayPuzzle(currentPuzzleIndex);
+      document.getElementById('submit-button').disabled = true;
+    });
+
+    document.getElementById('submit-button').addEventListener('click', () => {
+      const selectedRadio = document.querySelector('input[name="choice"]:checked');
+      if (selectedRadio) {
+        selectedChoices[currentPuzzleIndex] = selectedRadio.value;
+        console.log(`Selected choice for puzzle ${currentPuzzleIndex + 1}: ${selectedRadio.value}`);
+        // You can add code here to record the answer
+        if (currentPuzzleIndex < puzzles.length - 1) {
+          currentPuzzleIndex++;
+        } else {
+          currentPuzzleIndex = 0; // Go back to the first question
+        }
+        displayPuzzle(currentPuzzleIndex);
+        document.getElementById('submit-button').disabled = true;
+      } else {
+        alert('Please select an answer before submitting.');
+      }
+    });
+
+    document.getElementById('submit-exam-button').addEventListener('click', () => {
+      window.location.href = 'index.html';
+    });
+  </script>
+</body>
+</html>
