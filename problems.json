@@ -1,0 +1,27 @@
+[
+    {
+      "question": "images/trig_lv1_1.png",
+      "steps": "images/trig_lv1_1.steps1.png",
+      "choices": [
+        {
+          "content": "a",
+          "isCorrect": false
+        },
+        {
+          "content": "b",
+          "isCorrect": true
+        },
+        {
+          "content": "c",
+          "isCorrect": false
+        },
+        {
+          "content": "d",
+          "isCorrect": false
+        }
+      ],
+      "ex": "2024, 8 April Shift-1",
+      "ch": "Trig"
+    }
+
+  ]
