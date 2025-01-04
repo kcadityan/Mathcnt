@@ -1,45 +1,59 @@
 [
   {
-    "question": "<math><mrow><mi>x</mi><mo>+</mo><mn>2</mn><mo>=</mo><mn>4</mn></mrow></math>",
+    "question": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mi>if</mi><mo>&#xA0;</mo><mi>sin</mi><mi>x</mi><mo>=</mo><mo>-</mo><mfrac><mn>3</mn><mn>5</mn></mfrac><mo>&#xA0;</mo><mi>where</mi><mo>&#xA0;</mo><mo>&#x3C0;</mo><mo>&#xA0;</mo><mo>&lt;</mo><mo>&#xA0;</mo><mi>x</mi><mo>&#xA0;</mo><mo>&lt;</mo><mo>&#xA0;</mo><mfrac><mn>3</mn><mn>2</mn></mfrac><mo>&#xA0;</mo><mi>&#x3C0;</mi><mo>&#xA0;</mo><mi>then</mi><mo>&#xA0;</mo><mn>80</mn><mo>(</mo><msup><mi>tan</mi><mn>2</mn></msup><mi>x</mi><mo>-</mo><mi>cos</mi><mi>x</mi><mo>)</mo><mi>is</mi><mo>&#xA0;</mo><mi>equal</mi><mo>&#xA0;</mo><mi>to</mi></mrow></math>",
     "steps": [
-      "<math><mrow><mi>x</mi><mo>=</mo><mn>4</mn><mo>-</mo><mn>2</mn></mrow></math>",
-      "<math><mrow><mi>x</mi><mo>=</mo><mn>2</mn></mrow></math>"
+      "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mi>sin</mi><mi>x</mi><mo>=</mo><mo>-</mo><mfrac><mn>3</mn><mn>5</mn></mfrac></mrow></math>",
+      "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mi>cos</mi><mi>x</mi><mo>=</mo><mo>-</mo><mfrac><mn>4</mn><mn>5</mn></mfrac></mrow></math>",
+      "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mi>tan</mi><mi>x</mi><mo>=</mo><mfrac><mi>sinx</mi><mi>x</mi></mfrac><mo>/</mo><mfrac><mi>cosx</mi><mi>x</mi></mfrac></mrow></math>",
+      "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mi>tan</mi><mi>x</mi><mo>=</mo><mfrac><mo>-</mo><mn>3</mn><mo>/</mo><mo>-</mo><mn>4</mn></mfrac><mo>=</mo><mfrac><mn>3</mn><mn>4</mn></mfrac></mrow></math>",
+      "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><msup><mi>tan</mi><mn>2</mn></msup><mi>x</mi><mo>=</mo><mfrac><mn>9</mn><mn>16</mn></mfrac></mrow></math>",
+      "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mn>80</mn><mo>(</mo><mfrac><mn>9</mn><mn>16</mn></mfrac><mo>-</mo><mo>-</mo><mfrac><mn>4</mn><mn>5</mn></mfrac><mo>)</mo><mo>=</mo><mn>80</mn><mo>(</mo><mfrac><mn>9</mn><mn>16</mn></mfrac><mo>+</mo><mfrac><mn>4</mn><mn>5</mn></mfrac><mo>)</mo></mrow></math>",
+      "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mn>80</mn><mo>(</mo><mfrac><mn>45</mn><mn>80</mn></mfrac><mo>+</mo><mfrac><mn>64</mn><mn>80</mn></mfrac><mo>)</mo><mo>=</mo><mn>80</mn><mo>(</mo><mfrac><mn>109</mn><mn>80</mn></mfrac><mo>)</mo><mo>=</mo><mn>109</mn></mrow></math>"
     ],
     "choices": [
       {
-        "content": "<math><mrow><mi>x</mi><mo>=</mo><mn>2</mn></mrow></math>",
+        "content": "108",
+        "isCorrect": false
+      },
+      {
+        "content": "109",
         "isCorrect": true
       },
       {
-        "content": "<math><mrow><mi>x</mi><mo>=</mo><mn>3</mn></mrow></math>",
+        "content": "18",
         "isCorrect": false
       },
       {
-        "content": "<math><mrow><mi>x</mi><mo>=</mo><mn>4</mn></mrow></math>",
+        "content": "19",
         "isCorrect": false
       }
-    ]
+    ],
+    "ex": "2024, 8 April Shift-1",
+    "ch": "Trig"
   },
   {
-    "question": "<math><mrow><mi>y</mi><mo>-</mo><mn>3</mn><mo>=</mo><mn>1</mn></mrow></math>",
-    "steps": [
-      "<math><mrow><mi>y</mi><mo>=</mo><mn>1</mn><mo>+</mo><mn>3</mn></mrow></math>",
-      "<math><mrow><mi>y</mi><mo>=</mo><mn>4</mn></mrow></math>"
-    ],
+    "question": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mi>Let</mi><mo>&#xA0;</mo><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mfrac><mn>1</mn><mrow><mn>7</mn><mo>-</mo><mi>sin</mi><mo>(</mo><mn>5</mn><mi>x</mi><mo>)</mo></mrow></mfrac><mo>&#xA0;</mo><mi>be</mi><mo>&#xA0;</mo><mi>a</mi><mo>&#xA0;</mo><mi>function</mi><mo>&#xA0;</mo><mi>defined</mi><mo>&#xA0;</mo><mi>on</mi><mo>&#xA0;</mo><mi>R</mi><mo>.</mo><mo>&#xA0;</mo><mi>Then</mi><mo>&#xA0;</mo><mi>the</mi><mo>&#xA0;</mo><mi>range</mi><mo>&#xA0;</mo><mi>of</mi><mo>&#xA0;</mo><mi>the</mi><mo>&#xA0;</mo><mi>function</mi><mo>&#xA0;</mo><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>&#xA0;</mo><mi>is</mi><mo>&#xA0;</mo><mi>equal</mi><mo>&#xA0;</mo><mi>to</mi></mrow></math>",
+    "steps": [],
     "choices": [
       {
-        "content": "<math><mrow><mi>y</mi><mo>=</mo><mn>4</mn></mrow></math>",
+        "content": "[1/7, 1/6]",
+        "isCorrect": false
+      },
+      {
+        "content": "[1/7, 1/5]",
+        "isCorrect": false
+      },
+      {
+        "content": "[1/8, 1/6]",
         "isCorrect": true
       },
       {
-        "content": "<math><mrow><mi>y</mi><mo>=</mo><mn>5</mn></mrow></math>",
-        "isCorrect": false
-      },
-      {
-        "content": "<math><mrow><mi>y</mi><mo>=</mo><mn>3</mn></mrow></math>",
+        "content": "[1/8, 1/5]",
         "isCorrect": false
       }
-    ]
+    ],
+    "ex": "2024, 6 April Shift-1",
+    "ch": "Trig"
   },
   {
     "question": "<math><mrow><mn>2</mn><mi>z</mi><mo>=</mo><mn>8</mn></mrow></math>",
@@ -60,7 +74,9 @@
         "content": "<math><mrow><mi>z</mi><mo>=</mo><mn>2</mn></mrow></math>",
         "isCorrect": false
       }
-    ]
+    ],
+    "ex": "Example 2",
+    "ch": "Algebra"
   },
   {
     "question": "<math><mrow><mn>3</mn><mi>a</mi><mo>+</mo><mn>1</mn><mo>=</mo><mn>7</mn></mrow></math>",
@@ -83,7 +99,9 @@
         "content": "<math><mrow><mi>a</mi><mo>=</mo><mn>1</mn></mrow></math>",
         "isCorrect": false
       }
-    ]
+    ],
+    "ex": "Example 3",
+    "ch": "Algebra"
   },
   {
     "question": "<math><mrow><mn>4</mn><mi>b</mi><mo>-</mo><mn>2</mn><mo>=</mo><mn>10</mn></mrow></math>",
@@ -106,7 +124,9 @@
         "content": "<math><mrow><mi>b</mi><mo>=</mo><mn>2</mn></mrow></math>",
         "isCorrect": false
       }
-    ]
+    ],
+    "ex": "Example 4",
+    "ch": "Algebra"
   },
   {
     "question": "<math><mrow><mn>5</mn><mi>c</mi><mo>+</mo><mn>3</mn><mo>=</mo><mn>18</mn></mrow></math>",
@@ -129,6 +149,8 @@
         "content": "<math><mrow><mi>c</mi><mo>=</mo><mn>2</mn></mrow></math>",
         "isCorrect": false
       }
-    ]
+    ],
+    "ex": "Example 5",
+    "ch": "Algebra"
   }
 ]

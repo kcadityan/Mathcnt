@@ -61,10 +61,18 @@
       top: 10px;
       left: 10px;
     }
+    #result-label {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 18px;
+      font-weight: bold;
+    }
   </style>
 </head>
 <body>
   <h1>Puzzles</h1>
+  <div id="result-label"></div>
   <div id="puzzles-container"></div>
   <div class="navigation-buttons">
     <button id="back-button">Back</button>
@@ -101,6 +109,16 @@
       questionDiv.className = 'question';
       questionDiv.innerHTML = `<strong>Question ${index + 1}:</strong> ${puzzle.question}`;
       puzzleDiv.appendChild(questionDiv);
+
+      const exDiv = document.createElement('div');
+      exDiv.className = 'ex';
+      exDiv.innerHTML = `<strong>Exam:</strong> ${puzzle.ex}`;
+      puzzleDiv.appendChild(exDiv);
+
+      const chDiv = document.createElement('div');
+      chDiv.className = 'ch';
+      chDiv.innerHTML = `<strong>Chapter:</strong> ${puzzle.ch}`;
+      puzzleDiv.appendChild(chDiv);
 
       const stepsDiv = document.createElement('div');
       stepsDiv.className = 'steps';
@@ -160,8 +178,15 @@
       const selectedRadio = document.querySelector('input[name="choice"]:checked');
       if (selectedRadio) {
         selectedChoices[currentPuzzleIndex] = selectedRadio.value;
+        const isCorrect = puzzles[currentPuzzleIndex].choices[selectedRadio.value].isCorrect;
+        const resultLabel = document.getElementById('result-label');
+        resultLabel.textContent = isCorrect ? 'Correct' : 'Wrong';
+        resultLabel.style.color = isCorrect ? 'green' : 'red';
         console.log(`Selected choice for puzzle ${currentPuzzleIndex + 1}: ${selectedRadio.value}`);
         // You can add code here to record the answer
+        setTimeout(() => {
+          resultLabel.textContent = '';
+        }, 5000);
         if (currentPuzzleIndex < puzzles.length - 1) {
           currentPuzzleIndex++;
         } else {
