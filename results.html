@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exam Results</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 50px;
+      text-align: center;
+      font-size: 18px; /* Increased base font size */
+    }
+    .results {
+      margin-top: 20px;
+    }
+    .result-item {
+      margin: 10px 0;
+    }
+    .home-button {
+      margin-top: 20px;
+      padding: 15px 30px;
+      font-size: 20px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    .home-button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <h1>Exam Results</h1>
+  <div class="results" id="results-container"></div>
+  <button class="home-button" onclick="returnToHome()">Return to Home</button>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const resultsContainer = document.getElementById('results-container');
+      const examResults = JSON.parse(localStorage.getItem('examResults'));
+
+      if (examResults) {
+        resultsContainer.innerHTML = `
+          <div class="result-item"><strong>Correct Answers:</strong> ${examResults.correctAnswers} out of ${examResults.totalQuestions}</div>
+          <div class="result-item"><strong>Accuracy:</strong> ${examResults.accuracy.toFixed(2)}%</div>
+          <div class="result-item"><strong>Total Time Taken:</strong> ${examResults.totalTime.toFixed(2)} seconds</div>
+        `;
+
+        examResults.questionTimes.forEach((time, index) => {
+          resultsContainer.innerHTML += `<div class="result-item"><strong>Time taken for question ${index + 1}:</strong> ${time.toFixed(2)} seconds</div>`;
+        });
+      } else {
+        resultsContainer.innerHTML = '<div class="result-item">No results found.</div>';
+      }
+    });
+
+    function returnToHome() {
+      window.location.href = 'index.html';
+    }
+  </script>
+</body>
+</html>

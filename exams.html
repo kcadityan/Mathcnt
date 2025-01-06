@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exams</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 50px;
+      text-align: center;
+      font-size: 18px; /* Increased base font size */
+    }
+    .exam {
+      margin-bottom: 30px;
+    }
+    .question {
+      margin: 10px 0;
+      font-size: 28px; /* Increased question font size */
+    }
+    .choices {
+      margin: 10px 0;
+    }
+    .choice {
+      display: inline-block;
+      margin: 5px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 20px; /* Increased choice font size */
+    }
+    .navigation-buttons {
+      margin-top: 20px;
+    }
+    button {
+      padding: 15px 30px; /* Increased button padding */
+      margin: 5px;
+      font-size: 20px; /* Increased button font size */
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    button:disabled {
+      background-color: #cccccc;
+      cursor: not-allowed;
+    }
+    .choice label {
+      display: inline-block;
+      padding: 10px;
+      cursor: pointer;
+    }
+    .choice input[type="radio"] {
+      margin-right: 10px;
+    }
+    #submit-exam-button {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
+    #result-label {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 24px; /* Increased result label font size */
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>Exams</h1>
+  <div id="result-label"></div>
+  <div id="exams-container"></div>
+  <div class="navigation-buttons">
+    <button id="back-button">Back</button>
+    <button id="next-button">Next</button>
+  </div>
+  <button id="submit-button" disabled>Submit</button>
+  <button id="submit-exam-button">Submit Exam</button>
+
+  <script src="exams.js"></script>
+</body>
+</html>
