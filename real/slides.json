@@ -1,8 +1,0 @@
-[
-  {
-    "title": "Complex PEMDAS Fraction with Square Roots and Exponents",
-    "LHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mfrac><mrow><msup><mrow><mo>(</mo><msqrt><mn>16</mn></msqrt><mo>+</mo><msqrt><mn>25</mn></msqrt><mo>)</mo></mrow><mn>3</mn></msup><mo>-</mo><msqrt><mn>36</mn></msqrt><mo>&#xD7;</mo><msqrt><mn>49</mn></msqrt></mrow><mrow><msqrt><mn>64</mn></msqrt><mo>+</mo><msqrt><mn>81</mn></msqrt><mo>&#xD7;</mo><mo>(</mo><msqrt><mn>4</mn></msqrt><mo>+</mo><msqrt><mn>9</mn></msqrt><mo>)</mo></mrow></mfrac></math>",
-    "RHS": "<math xmlns='http://www.w3.org/1998/Math/MathML'><mo>12.96</mo></math>"
-  }  
-   
-]
