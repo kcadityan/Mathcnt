@@ -2,6 +2,7 @@
     {
       "question": "images/trig_lv1_1.png",
       "steps": "images/trig_lv1_1.steps1.png",
+      "idea":"You can use the trick of 3,4,5",
       "choices": [
         {
           "content": "a",

@@ -78,6 +78,14 @@ function displayProblem(index) {
   document.getElementById('hint-button').disabled = !problem.steps;
 }
 
+// New functionality for the Idea button
+document.getElementById('idea-button').addEventListener('click', () => {
+  const idea = problems[currentProblemIndex].idea; // Get the idea for the current problem
+  const ideaDiv = document.getElementById('idea');
+  ideaDiv.innerHTML = `<strong>Idea:</strong> ${idea}`;
+  ideaDiv.style.display = 'block'; // Make the idea visible
+});
+
 document.getElementById('back-button').addEventListener('click', () => {
   if (currentProblemIndex > 0) {
     currentProblemIndex--;
@@ -105,7 +113,6 @@ document.getElementById('submit-button').addEventListener('click', () => {
     resultLabel.textContent = isCorrect ? 'Correct' : 'Wrong';
     resultLabel.style.color = isCorrect ? 'green' : 'red';
     console.log(`Selected choice for problem ${currentProblemIndex + 1}: ${selectedRadio.value}`);
-    // You can add code here to record the answer
     setTimeout(() => {
       resultLabel.textContent = '';
     }, 5000);

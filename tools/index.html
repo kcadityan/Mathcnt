@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Math Question Bounded Boxes</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    #container {
+      position: relative;
+      display: inline-block;
+    }
+    #image {
+      display: block;
+      max-width: 100%;
+    }
+    .box {
+      position: absolute;
+      background: rgba(255, 0, 0, 0.2);
+      border: 2px solid red;
+      cursor: move;
+    }
+    .box .label {
+      position: absolute;
+      top: -20px;
+      left: -40px;
+      background: red;
+      color: white;
+      padding: 2px 5px;
+      font-size: 14px;
+    }
+    .handle {
+      position: absolute;
+      height: 6px;
+      width: 100%;
+      background: blue;
+      cursor: ns-resize;
+    }
+    .handle.top {
+      top: -3px;
+      background: blue;
+    }
+    .handle.bottom {
+      bottom: -3px;
+      background: yellow;
+    }
+    #controls {
+      margin-bottom: 10px;
+    }
+    button {
+      padding: 10px;
+      margin: 5px;
+      font-size: 16px;
+    }
+    input {
+      padding: 5px;
+      margin: 5px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div id="controls">
+    <label for="questionsColumn1">Number of Questions in Column 1:</label>
+    <input type="number" id="questionsColumn1" min="1" required>
+    <label for="questionsColumn2">Number of Questions in Column 2:</label>
+    <input type="number" id="questionsColumn2" min="1" required>
+    <label for="startingQuestion">Starting Question Number:</label>
+    <input type="number" id="startingQuestion" min="1" required>
+    <button id="generate">Generate Boxes</button>
+    <button id="save">Save Data</button>
+    <button id="downloadAll">Download All Images</button>
+  </div>
+  <div id="container">
+    <img id="image" src="math_text_page.jpg" alt="Math Page">
+  </div>
+
+  <script>
+    const container = document.getElementById('container');
+    const image = document.getElementById('image');
+    const generateButton = document.getElementById('generate');
+    const saveButton = document.getElementById('save');
+    const downloadAllButton = document.getElementById('downloadAll');
+
+    let boxes = []; // Store box objects with their dimensions and question numbers
+
+    generateButton.addEventListener('click', () => {
+      const questionsColumn1 = parseInt(document.getElementById('questionsColumn1').value, 10);
+      const questionsColumn2 = parseInt(document.getElementById('questionsColumn2').value, 10);
+      const startingQuestion = parseInt(document.getElementById('startingQuestion').value, 10);
+
+      if (!questionsColumn1 || !questionsColumn2 || !startingQuestion) {
+        alert('Please provide valid inputs.');
+        return;
+      }
+
+      generateBoxes(questionsColumn1, questionsColumn2, startingQuestion);
+    });
+
+    function generateBoxes(questionsColumn1, questionsColumn2, startingQuestion) {
+      // Clear existing boxes
+      boxes.forEach(box => box.element.remove());
+      boxes = [];
+
+      const imageHeight = image.clientHeight;
+      const column1MinX = 0;
+      const column2MinX = 360;
+      const columnWidth = 360;
+
+      const questionHeight1 = Math.floor(imageHeight / questionsColumn1);
+      const questionHeight2 = Math.floor(imageHeight / questionsColumn2);
+
+      // Generate boxes for column 1
+      for (let i = 0; i < questionsColumn1; i++) {
+        const questionNumber = startingQuestion + i;
+        const y = i * questionHeight1;
+        const box = createBox(column1MinX, y, columnWidth, questionHeight1, questionNumber);
+        container.appendChild(box);
+        boxes.push({ element: box, x: column1MinX, y, width: columnWidth, height: questionHeight1, questionNumber });
+      }
+
+      // Generate boxes for column 2
+      for (let i = 0; i < questionsColumn2; i++) {
+        const questionNumber = startingQuestion + questionsColumn1 + i;
+        const y = i * questionHeight2;
+        const box = createBox(column2MinX, y, columnWidth, questionHeight2, questionNumber);
+        container.appendChild(box);
+        boxes.push({ element: box, x: column2MinX, y, width: columnWidth, height: questionHeight2, questionNumber });
+      }
+    }
+
+    function createBox(x, y, width, height, questionNumber) {
+      const box = document.createElement('div');
+      box.classList.add('box');
+      box.style.left = `${x}px`;
+      box.style.top = `${y}px`;
+      box.style.width = `${width}px`;
+      box.style.height = `${height}px`;
+
+      const label = document.createElement('div');
+      label.classList.add('label');
+      label.innerText = questionNumber;
+      box.appendChild(label);
+
+      const topHandle = document.createElement('div');
+      topHandle.classList.add('handle', 'top');
+      box.appendChild(topHandle);
+
+      const bottomHandle = document.createElement('div');
+      bottomHandle.classList.add('handle', 'bottom');
+      box.appendChild(bottomHandle);
+
+      // Dragging top and bottom handles
+      topHandle.addEventListener('mousedown', event => resizeStart(event, box, 'top'));
+      bottomHandle.addEventListener('mousedown', event => resizeStart(event, box, 'bottom'));
+
+      return box;
+    }
+
+    function resizeStart(event, box, direction) {
+      event.preventDefault();
+      const initialY = event.clientY;
+      const initialHeight = parseInt(box.style.height, 10);
+      const initialTop = parseInt(box.style.top, 10);
+
+      function onMouseMove(moveEvent) {
+        const deltaY = moveEvent.clientY - initialY;
+        if (direction === 'top') {
+          box.style.top = `${initialTop + deltaY}px`;
+          box.style.height = `${initialHeight - deltaY}px`;
+        } else if (direction === 'bottom') {
+          box.style.height = `${initialHeight + deltaY}px`;
+        }
+      }
+
+      function onMouseUp() {
+        document.removeEventListener('mousemove', onMouseMove);
+        document.removeEventListener('mouseup', onMouseUp);
+        updateBoxData(box);
+      }
+
+      document.addEventListener('mousemove', onMouseMove);
+      document.addEventListener('mouseup', onMouseUp);
+    }
+
+    function updateBoxData(box) {
+      const x = parseInt(box.style.left, 10);
+      const y = parseInt(box.style.top, 10);
+      const width = parseInt(box.style.width, 10);
+      const height = parseInt(box.style.height, 10);
+      const label = box.querySelector('.label').innerText;
+
+      const boxObj = boxes.find(b => b.element === box);
+      if (boxObj) {
+        boxObj.x = x;
+        boxObj.y = y;
+        boxObj.width = width;
+        boxObj.height = height;
+        boxObj.questionNumber = parseInt(label, 10);
+      }
+    }
+
+    saveButton.addEventListener('click', () => {
+      const data = boxes.map(box => ({
+        questionNumber: box.questionNumber,
+        x: box.x,
+        y: box.y,
+        width: box.width,
+        height: box.height
+      }));
+
+      const json = JSON.stringify(data, null, 2);
+      const blob = new Blob([json], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'boxes.json';
+      a.click();
+      URL.revokeObjectURL(url);
+    });
+
+    downloadAllButton.addEventListener('click', () => {
+      const canvas = document.createElement('canvas');
+      const ctx = canvas.getContext('2d');
+
+      const imageElement = new Image();
+      imageElement.src = image.src;
+
+      imageElement.onload = () => {
+        boxes.forEach(box => {
+          canvas.width = box.width;
+          canvas.height = box.height;
+
+          ctx.drawImage(
+            imageElement,
+            box.x,
+            box.y,
+            box.width,
+            box.height,
+            0,
+            0,
+            box.width,
+            box.height
+          );
+
+          canvas.toBlob(blob => {
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `question_${box.questionNumber}.jpg`;
+            a.click();
+            URL.revokeObjectURL(url);
+          }, 'image/jpeg');
+        });
+      };
+    });
+  </script>
+</body>
+</html>
