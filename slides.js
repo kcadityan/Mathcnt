@@ -24,7 +24,7 @@ if (window.location.pathname.includes('problem_description.html')) {
 
   const folder = localStorage.getItem('currentFolder');
   if (folder) {
-    fetch(`${folder}/slides.json`)
+    fetch(`11/${folder}/slides.json`)
       .then(response => {
         if (!response.ok) throw new Error(`Failed to load slides from ${folder}`);
         return response.json();
